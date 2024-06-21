@@ -14,7 +14,7 @@ namespace Employee_Details.Controllers
             Employee  emp = new Employee();
             emp.Designation_List = new SelectList(new List<Designation>() { new Designation { Designation_Id = 1, Designation_Name = "Dot net Developer" } }, "Designation_Id", "Designation_Name");
             emp.Department_List = new SelectList(new List<Department>() { new Department { Department_Id = 1, Department_Name = "IT" } }, "Department_Id", "Department_Name");
-            ViewBag.message = "success";
+            ViewBag.message = "table";
             return View(emp);
         }        
     }
